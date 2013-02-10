@@ -1,8 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
-
+# Remove this when Rails is upgraded & requires rack >= 1.4.5 or >= 1.5.2
+gem 'rack', '~> 1.4.5'
 gem 'pg'
+
+gem 'haml-rails'
+gem 'jquery-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -16,12 +20,16 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+group :production do
+  gem 'unicorn'
+end
 
 group :development do
+  gem 'thin'
 end
 
 group :development, :test do
+  gem 'pry-rails'
 end
 
 group :test do
