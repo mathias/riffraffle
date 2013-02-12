@@ -3,7 +3,10 @@
   {{#each this}}
     <li>
       <strong>{{name}}</strong>
-      {{count}}
+      {{count}}<br />
+      {{won}}
     </li>
   {{/each}}
 </ul>
+
+<button {{action "pick"}}>Pick!</button>

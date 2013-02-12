@@ -8,6 +8,7 @@ gem 'decent_exposure'
 gem 'ember-rails'
 gem 'haml-rails'
 gem 'jquery-rails'
+gem 'underscore-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.

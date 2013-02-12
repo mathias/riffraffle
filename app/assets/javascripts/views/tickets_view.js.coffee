@@ -1,1 +1,1 @@
-SnowMobileRaffle.TicketsView = Ember.View.extend({})
+SnowMobileRaffle.TicketsView = Ember.View.extend()
