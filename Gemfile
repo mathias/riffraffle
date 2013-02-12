@@ -22,6 +22,7 @@ group :production do
 end
 
 group :development do
+  gem 'hpricot'
   gem 'thin'
 end
 
