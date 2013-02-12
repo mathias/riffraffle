@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.12'
 gem 'pg'
 
+gem 'active_model_serializers'
+gem 'decent_exposure'
+gem 'ember-rails'
 gem 'haml-rails'
 gem 'jquery-rails'
 
