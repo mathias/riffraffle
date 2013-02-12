@@ -1,5 +1,9 @@
 <h1>Tickets</h1>
-
-<p>Your content here.</p>
-
-{{outlet}}
+<ul>
+  {{#each tickets}}
+    <li>
+      <strong>{{name}}</strong>
+      {{count}}
+    </li>
+  {{/each}}
+</ul>
