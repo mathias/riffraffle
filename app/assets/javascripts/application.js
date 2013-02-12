@@ -12,4 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require handlebars
+//= require ember
+//= require ember-data
+//= require_self
+//= require snow_mobile_raffle
+
+SnowMobileRaffle = Ember.Application.create();
