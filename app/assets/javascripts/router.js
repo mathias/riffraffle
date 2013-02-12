@@ -1,3 +1,2 @@
 SnowMobileRaffle.Router.map(function() {
-
 });
