@@ -1,12 +1,25 @@
 <h1>Tickets</h1>
 <ul>
-  {{#each this}}
+  {{#each potentialWinners}}
     <li>
       <strong>{{name}}</strong>
-      {{count}}<br />
-      {{won}}
     </li>
   {{/each}}
 </ul>
 
 <button {{action "pick"}}>Pick!</button>
+
+{{#if lastWinner}}
+
+<h2>Winner List</h2>
+Last Winner: {{lastWinner.name}}
+<p>{{winnerCount}} winners.</p>
+
+<ul>
+{{#each winnerList}}
+  <li>
+  {{name}}
+  </li>
+{{/each}}
+</ul>
+{{/if}}
