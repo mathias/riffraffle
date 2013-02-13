@@ -20,4 +20,5 @@ SnowMobileRaffle.TicketsController = Ember.ArrayController.extend(
     winner = @get('potentialWinners').objectAt(winnerIndex)
     winner.set('won', true)
     @set('lastWinner', winner)
+    @get('store').commit()
 )
