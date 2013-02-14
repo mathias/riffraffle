@@ -9,17 +9,20 @@
 
 <button {{action "pick"}}>Pick!</button>
 
-{{#if lastWinner}}
+{{#if winnerList}}
+  <h2>Winner List</h2>
 
-<h2>Winner List</h2>
-Last Winner: {{lastWinner.name}}
-<p>{{winnerCount}} winners.</p>
+  {{#if lastWinner}}
+    Last Winner: {{lastWinner.name}}
+  {{/if}}
 
-<ul>
-{{#each winnerList}}
-  <li>
-  {{name}}
-  </li>
-{{/each}}
-</ul>
+  <p>{{winnerCount}} winners.</p>
+
+  <ul>
+  {{#each winnerList}}
+    <li>
+    {{name}}
+    </li>
+  {{/each}}
+  </ul>
 {{/if}}

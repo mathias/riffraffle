@@ -1,18 +1,18 @@
 SnowMobileRaffle.TicketsController = Ember.ArrayController.extend(
   winnerCount: ( ->
-    return @filterProperty('won', true).get('length')
+    @filterProperty('won', true).get('length')
     ).property('@each.won')
 
   winnerList: ( ->
-    return @filterProperty('won', true)
+    @filterProperty('won', true)
     ).property('@each.won')
 
   potentialWinners: ( ->
-    return @filterProperty('won', false)
+    @filterProperty('won', false)
     ).property('@each.won')
 
   potentialWinnerCount: ( ->
-    return @filterProperty('won', false).get('length')
+    @get('potentialWinners').get('length')
     ).property('@each.won')
 
   pick: ->
