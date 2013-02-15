@@ -12,12 +12,16 @@
   @include background-image(image-url('ticket_smaller.png'));
   height: 150px;
   width: 300px;
+  position: relative;
 
   p {
     margin: 0 auto;
-    width: 280px;
-    padding-top: 95px;
+    width: 175px;
     overflow: hidden;
     color: #000;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.75em;
+    padding-top: 65px;
   }
 }
