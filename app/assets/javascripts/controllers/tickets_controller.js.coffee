@@ -39,9 +39,22 @@ SnowMobileRaffle.TicketsController = Ember.ArrayController.extend(
                        'rotateInDownRight', 'rotateInUpLeft', 'rotateInUpRight']))
 
   winnerLogic: ->
-    winnerIndex = _.random(@get('potentialWinnerCount') - 1)
-    winner = @get('potentialWinners').objectAt(winnerIndex)
+    winner =  @randomTicket()
     winner.set('won', true)
     @set('lastWinner', winner)
     @get('store').commit()
+
+  makeWeightedTickets: ->
+    weightedTickets = new Array
+    for ticket in @get('potentialWinners')
+      for n in [1..ticket.get('count')]
+        weightedTickets.push ticket
+
+    weightedTickets
+
+  randomizedTickets: ->
+    _.shuffle(@makeWeightedTickets())
+
+  randomTicket: ->
+    _.first(@randomizedTickets())
 )
