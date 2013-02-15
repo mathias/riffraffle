@@ -1,5 +1,6 @@
-<h1>Tickets</h1>
-<ul>
+{{view view.winningTicketView}}
+
+<ul id="potentialWinners">
   {{#each potentialWinners}}
     <li>
       <strong>{{name}}</strong>
@@ -11,10 +12,6 @@
 
 {{#if winnerList}}
   <h2>Winner List</h2>
-
-  {{#if lastWinner}}
-    Last Winner: {{lastWinner.name}}
-  {{/if}}
 
   <p>{{winnerCount}} winners.</p>
 
