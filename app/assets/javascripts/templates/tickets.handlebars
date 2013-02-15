@@ -4,10 +4,11 @@
   {{/if}}
 </div>
 
-<button {{action "pick"}}>Pick!</button>
+<button id="pickerButton" {{action "pick"}}>Pick!</button>
 
 {{#if winnerList}}
   <h2>Winner List</h2>
+  {{#if potentialWinnersDepleted}}No more tickets to pick!{{/if}}
   <ul>
   {{#each winnerList}}
     <li>

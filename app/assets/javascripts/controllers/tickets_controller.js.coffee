@@ -15,8 +15,13 @@ SnowMobileRaffle.TicketsController = Ember.ArrayController.extend(
     @get('potentialWinners').get('length')
     ).property('@each.won')
 
+  potentialWinnersDepleted: ( ->
+    console.log @get('potentialWinnerCount')
+    @get('potentialWinnerCount') == 0
+    ).property('@each.won')
+
   pick: ->
-    if (@get('potentialWinnerCount') - 1) > 0
+    if (@get('potentialWinnerCount')) > 0
       @winnerLogic()
 
       if @winningTicketView
