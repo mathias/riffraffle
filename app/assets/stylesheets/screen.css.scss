@@ -43,9 +43,9 @@ body {
     @include container;
   }
   #header, #footer {
-    @include column($blueprint-grid-columns);
+    @include column($blueprint-grid-columns, true);
   }
   #content {
-    @include column($blueprint-grid-columns);
+    @include column($blueprint-grid-columns, true);
   }
 }

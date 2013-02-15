@@ -3,30 +3,52 @@
 @import "compass/css3/border-radius";
 @import "compass/css3/box-shadow";
 
-#potentialWinners {
-  display: none;
-}
+#container {
+  padding: 0 10px;
 
-#winningContainer {
-  height: 180px;
-}
+  #potentialWinners {
+    display: none;
+  }
 
-.winningTicket {
-  @include background-image(image-url('ticket_smaller.png'));
-  height: 150px;
-  width: 300px;
-  position: relative;
+  #winningContainer {
+    height: 160px;
 
-  p {
-    margin: 0 auto;
-    width: 175px;
-    overflow: hidden;
-    color: #000;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 1.75em;
-    padding-top: 60px;
-    line-height: 24px;
-    height: 50px;
+    .winningTicket {
+      @include background-image(image-url('ticket_smaller.png'));
+      height: 150px;
+      width: 300px;
+      position: relative;
+
+      p {
+        margin: 0 auto;
+        width: 175px;
+        overflow: hidden;
+        color: #000;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 1.75em;
+        padding-top: 60px;
+        line-height: 24px;
+        height: 50px;
+      }
+    }
+  }
+
+  #buttonContainer {
+    height: 80px;
+
+    #pickerButton {
+      @include button-colors(#FFF, rgb(233, 92, 51), #000);
+      @include button-button;
+      @include border-radius;
+      font-size: 2rem;
+      width: 300px;
+      height: 50px;
+    }
+
+    p {
+      text-align: center;
+      vertical-align: middle;
+    }
   }
 }
