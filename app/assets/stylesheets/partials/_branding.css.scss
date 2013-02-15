@@ -1,0 +1,5 @@
+@import "compass/css3/images";
+
+body {
+  @include background-image(image-url('dark_tire.png'));
+}

@@ -1,0 +1,23 @@
+@import "compass/css3/images";
+
+#potentialWinners {
+  display: none;
+}
+
+#winningContainer {
+  height: 180px;
+}
+
+.winningTicket {
+  @include background-image(image-url('ticket_smaller.png'));
+  height: 150px;
+  width: 300px;
+
+  p {
+    margin: 0 auto;
+    width: 280px;
+    padding-top: 95px;
+    overflow: hidden;
+    color: #000;
+  }
+}

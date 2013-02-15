@@ -1,4 +1,8 @@
-{{view view.winningTicketView}}
+<div id="winningContainer">
+  {{#if lastWinner}}
+    {{view view.winningTicketView}}
+  {{/if}}
+</div>
 
 <ul id="potentialWinners">
   {{#each potentialWinners}}
