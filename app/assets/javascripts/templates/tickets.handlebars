@@ -4,21 +4,10 @@
   {{/if}}
 </div>
 
-<ul id="potentialWinners">
-  {{#each potentialWinners}}
-    <li>
-      <strong>{{name}}</strong>
-    </li>
-  {{/each}}
-</ul>
-
 <button {{action "pick"}}>Pick!</button>
 
 {{#if winnerList}}
   <h2>Winner List</h2>
-
-  <p>{{winnerCount}} winners.</p>
-
   <ul>
   {{#each winnerList}}
     <li>
