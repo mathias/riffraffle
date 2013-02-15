@@ -18,10 +18,20 @@ SnowMobileRaffle.TicketsController = Ember.ArrayController.extend(
   pick: ->
     if (@get('potentialWinnerCount') - 1) > 0
       @winnerLogic()
+
       if @winningTicketView
+        @winningTicketView.set('animation', @pickAnimation())
         @winningTicketView.rerender()
       else
-        @winningTicketView = SnowMobileRaffle.TicketView.create()
+        @winningTicketView = SnowMobileRaffle.TicketView.create({
+          animation: @pickAnimation()
+        })
+
+  pickAnimation: ->
+    _.first(_.shuffle(['rollIn', 'flipInX', 'flipInY', 'flash', 'bounce', 'shake', 'wobble'
+                       'fadeIn', 'fadeInUp', 'fadeInDown', 'bounceInDown', 'bounceInUp',
+                       'bounceInLeft', 'bounceInRight', 'rotateIn', 'rotateInDownLeft',
+                       'rotateInDownRight', 'rotateInUpLeft', 'rotateInUpRight']))
 
   winnerLogic: ->
     winnerIndex = _.random(@get('potentialWinnerCount') - 1)

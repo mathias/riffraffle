@@ -1,9 +1,9 @@
 SnowMobileRaffle.TicketView = Ember.View.extend({
   templateName: 'ticket'
   winnerBinding: 'SnowMobileRaffle.TicketsController.lastWinner'
-  classNameBindings: ['animated', 'flipInY']
+  classNameBindings: ['animated', 'animation']
 
-  animated: (-> 'animated').property()
+  animated: 'animated'
 
-  flipInY:(-> 'flipInY').property()
+  animation: 'flipInY'
 })
