@@ -4,6 +4,7 @@ gem 'rails', '3.2.13'
 gem 'pg'
 
 gem 'active_model_serializers'
+gem 'activeadmin'
 gem 'decent_exposure'
 gem 'ember-rails'
 gem 'haml-rails'
