@@ -1,4 +1,6 @@
 class TicketsController < ApplicationController
+  before_filter :authenticate_admin_user!
+
   expose(:tickets)
   expose(:ticket)
 
