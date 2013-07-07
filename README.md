@@ -1,6 +1,14 @@
-# snow_mobile_raffle
+# riffraffle
 
-A quick Ember app for picking raffle winners at Snow*Mobile Conf 2013. Uses Ember-Data and active_model_serializers (on top of Rails) to provide database data.
+A quick Ember app for picking raffle winners at ~~Snow*Mobile Conf 2013~~ ALL THE CONFERENCES. Uses Ember-Data and active_model_serializers (on top of Rails) to provide database data to tiny JSMVC app.
+
+## TODO:
+
+- Add ActiveAdmin for model data
+- Wrap routes in Devise so only organizers can "pick" and mark winners.
+- Add a convenient place to change conf title, other data.
+- Allow uploading the background image and ticket image through S3
+- Allow uploading CSV file of attendees/ticket counts.
 
 ## License
 

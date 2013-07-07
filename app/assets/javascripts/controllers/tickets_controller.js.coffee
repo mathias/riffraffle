@@ -1,4 +1,4 @@
-SnowMobileRaffle.TicketsController = Ember.ArrayController.extend(
+Riffraffle.TicketsController = Ember.ArrayController.extend(
   winnerCount: ( ->
     @filterProperty('won', true).get('length')
     ).property('@each.won')
@@ -28,7 +28,7 @@ SnowMobileRaffle.TicketsController = Ember.ArrayController.extend(
         @winningTicketView.set('animation', @pickAnimation())
         @winningTicketView.rerender()
       else
-        @winningTicketView = SnowMobileRaffle.TicketView.create({
+        @winningTicketView = Riffraffle.TicketView.create({
           animation: @pickAnimation()
         })
 

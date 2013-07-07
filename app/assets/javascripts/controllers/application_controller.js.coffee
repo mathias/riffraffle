@@ -1,1 +1,1 @@
-SnowMobileRaffle.ApplicationController = Ember.Controller.extend({})
+Riffraffle.ApplicationController = Ember.Controller.extend({})

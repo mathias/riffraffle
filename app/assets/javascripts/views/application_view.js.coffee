@@ -1,1 +1,1 @@
-SnowMobileRaffle.ApplicationView = Ember.View.extend({})
+Riffraffle.ApplicationView = Ember.View.extend({})

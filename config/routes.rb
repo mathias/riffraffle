@@ -1,4 +1,4 @@
-SnowMobileRaffle::Application.routes.draw do
+Riffraffle::Application.routes.draw do
 
   resources :tickets
 

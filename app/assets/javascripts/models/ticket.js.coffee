@@ -1,4 +1,4 @@
-SnowMobileRaffle.Ticket = DS.Model.extend(
+Riffraffle.Ticket = DS.Model.extend(
   name: DS.attr("string")
   count: DS.attr("number")
   won: DS.attr("boolean")

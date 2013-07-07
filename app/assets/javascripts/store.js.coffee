@@ -1,3 +1,3 @@
-SnowMobileRaffle.Store = DS.Store.extend(
+Riffraffle.Store = DS.Store.extend(
   revision: 11
 )

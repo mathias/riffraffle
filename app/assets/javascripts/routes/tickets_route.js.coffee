@@ -1,4 +1,4 @@
-SnowMobileRaffle.TicketsRoute = Ember.Route.extend(
+Riffraffle.TicketsRoute = Ember.Route.extend(
   model: ->
-    return SnowMobileRaffle.Ticket.find()
+    return Riffraffle.Ticket.find()
 )

@@ -1,8 +1,8 @@
 # Be sure to restart your server when you modify this file.
 
-SnowMobileRaffle::Application.config.session_store :cookie_store, key: '_snow_mobile_raffle_session'
+Riffraffle::Application.config.session_store :cookie_store, key: '_riffraffle_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rails generate session_migration")
-# SnowMobileRaffle::Application.config.session_store :active_record_store
+# Riffraffle::Application.config.session_store :active_record_store

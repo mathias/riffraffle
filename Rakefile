@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-SnowMobileRaffle::Application.load_tasks
+Riffraffle::Application.load_tasks

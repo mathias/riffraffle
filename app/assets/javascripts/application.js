@@ -17,6 +17,6 @@
 //= require ember
 //= require ember-data
 //= require_self
-//= require snow_mobile_raffle
+//= require riffraffle
 
-SnowMobileRaffle = Ember.Application.create();
+Riffraffle = Ember.Application.create();

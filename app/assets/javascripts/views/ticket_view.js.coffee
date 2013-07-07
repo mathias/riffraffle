@@ -1,6 +1,6 @@
-SnowMobileRaffle.TicketView = Ember.View.extend({
+Riffraffle.TicketView = Ember.View.extend({
   templateName: 'ticket'
-  winnerBinding: 'SnowMobileRaffle.TicketsController.lastWinner'
+  winnerBinding: 'Riffraffle.TicketsController.lastWinner'
   classNameBindings: ['animated', 'animation']
 
   animated: 'animated'

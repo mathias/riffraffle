@@ -1,1 +1,1 @@
-SnowMobileRaffle.ApplicationRoute = Ember.Route.extend({})
+Riffraffle.ApplicationRoute = Ember.Route.extend({})

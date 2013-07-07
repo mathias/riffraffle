@@ -1,2 +1,2 @@
-SnowMobileRaffle.Router.map ->
+Riffraffle.Router.map ->
   this.route("tickets", { path: '/' })

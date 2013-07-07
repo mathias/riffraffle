@@ -1,13 +1,13 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: snow_mobile_raffle_development
+  database: riffraffle_development
   pool: 5
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: snow_mobile_raffle_test
+  database: riffraffle_test
   pool: 5
 
 # replaced on deploy by heroku:

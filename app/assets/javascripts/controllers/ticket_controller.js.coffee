@@ -1,1 +1,1 @@
-SnowMobileRaffle.TicketController = Ember.ObjectController.extend({})
+Riffraffle.TicketController = Ember.ObjectController.extend({})
