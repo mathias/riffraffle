@@ -4,7 +4,7 @@
 @import "compass/css3/box-shadow";
 
 #container {
-  padding: 0 10px;
+  padding: 10px;
 
   #potentialWinners {
     display: none;
@@ -14,7 +14,7 @@
     height: 160px;
 
     .winningTicket {
-      @include background-image(image-url('ticket_smaller.png'));
+      @include background-image(image-url('ticket.png'));
       height: 150px;
       width: 300px;
       position: relative;
@@ -26,9 +26,9 @@
         color: #000;
         vertical-align: middle;
         text-align: center;
-        font-size: 1.75em;
-        padding-top: 60px;
-        line-height: 24px;
+        font-size: 2em;
+        padding-top: 50px;
+        line-height: 26px;
         height: 50px;
       }
     }
