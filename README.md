@@ -16,7 +16,7 @@ Currently, it only supports uploading a Tito Master Orders CSV. Nothing else wil
 
 **Warning**: Uploading a new CSV will wipe out all Ticket data!
 
-Navigate to http://riffraffle-staging.herokuapp.com/import after logging in, and upload the Tito Master Orders CSV.
+Navigate to http://riffraffle-staging.herokuapp.com/import (log in required), and upload the Tito Master Orders CSV.
 
 ## License
 
