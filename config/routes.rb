@@ -1,5 +1,5 @@
 Riffraffle::Application.routes.draw do
-  resources :tickets
+  resources :tickets, only: [:index, :show]
 
   root to: "pages#index"
 
